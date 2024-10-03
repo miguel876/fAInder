@@ -1,0 +1,25 @@
+{
+    "name": "fAInder",
+    "description": "fAInder is a artificial intelligence detection extension.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab",
+        "webNavigation",
+        "storage",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": "images/icon.png"
+    },
+    "content_scripts": [
+        {
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": ["scripts/content.js"],
+        "run_at": "document_idle"
+        }
+    ]
+}
