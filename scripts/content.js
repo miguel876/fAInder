@@ -1,18 +1,13 @@
-console.log('AI Text Detector content script loaded');
-
 async function analyzeTextWithHuggingFace(text) {
-  const apiKey = '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'; // Replace with your actual Hugging Face API key
-  const apiUrl = 'https://api-inference.huggingface.co/models/roberta-base-openai-detector';
+  const apiUrl = 'https://fainder-backend-ftm5ijrbu-miguel876s-projects.vercel.app/analyze';
 
   try {
     const response = await fetch(apiUrl, {
       method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ inputs: text })
+      body: JSON.stringify({ text })
     });
+
+    console.log("RESPONSE", response)
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
