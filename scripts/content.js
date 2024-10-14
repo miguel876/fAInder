@@ -1,5 +1,5 @@
 async function analyzeTextWithHuggingFace(text) {
-  const apiUrl = 'https://fainder-backend-ftm5ijrbu-miguel876s-projects.vercel.app/analyze';
+  const apiUrl = 'https://fainder-backend.vercel.app/analyze';
 
   try {
     const response = await fetch(apiUrl, {
