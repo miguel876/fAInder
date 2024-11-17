@@ -29,6 +29,8 @@ After installation, click the fAinder icon in your Chrome toolbar. Browse any we
 ## Tech Stack
 - **HTML and CSS**: For the popup and extension UI.
 - **JavaScript**: Core logic for detecting AI-generated content.
+- **Node JS**: Backend service for AI detection.
+- **Vercel**: For the backend service deployment.
   
 ## Folder Structure
 
