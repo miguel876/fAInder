@@ -14,7 +14,7 @@ fAinder is a lightweight Chrome extension that helps you identify AI-generated t
 Clone this repository:
 bash
 Copy code
-```git clone https://github.com/your-username/fAinder.git```
+```git clone https://github.com/miguel876/fAinder.git```
 1. Open Chrome and navigate to chrome://extensions/.
 2. Enable Developer Mode in the top-right corner.
 2. Click on Load Unpacked and select the fAinder directory.
